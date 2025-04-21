@@ -1,12 +1,6 @@
-# app.py
-#from datetime import datetime, timedelta
 from flask import Flask, jsonify, request, send_from_directory, url_for
-#from wtforms import StringField, PasswordField, SubmitField
-#from flask_login import LoginManager, UserMixin, login_user, login_required, current_user
-#from flask_sqlalchemy import SQLAlchemy
 from flask_cors import CORS
 from flask_jwt_extended import JWTManager
-# from werkzeug.security import generate_password_hash, check_password_hash
 from werkzeug.utils import secure_filename
 from flask_migrate import Migrate
 from flask_mail import Mail
@@ -43,8 +37,8 @@ application.config['CACHE_DEFAULT_TIMEOUT'] = 300
 application.config['MAIL_SERVER'] = 'smtp.gmail.com'
 application.config['MAIL_PORT'] = 587
 application.config['MAIL_USE_TLS'] = True
-application.config['MAIL_USERNAME'] = 'qstykks@gmail.com'  # Replace with your email
-application.config['MAIL_PASSWORD'] = 'bjvz exbd lmed surz'    # Replace with your app password
+application.config['MAIL_USERNAME'] = ''  # Replace with your email
+application.config['MAIL_PASSWORD'] = ''    # Replace with your app password
 
 # Initialize extensions
 db.init_app(application)
